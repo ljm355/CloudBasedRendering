@@ -194,6 +194,7 @@ int main(int argc, char **argv)
 				else if (msg_type == MESSAGE_TYPE::RESIZE)
 				{
 					receive_RESIZE(ms);
+					_cameraBuffer->setClearColor(viewer.getCamera()->getClearColor());
 				}
 			}
 
